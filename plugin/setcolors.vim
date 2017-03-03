@@ -11,12 +11,15 @@
 "   :SetColors                  (display current scheme names)
 " Set the current color scheme based on time of day:
 "   :SetColors now
+" Set color scheme names to use in .vimrc
+"   let g:mycolors=['slate', 'torte']
 if v:version < 700 || exists('loaded_setcolors') || &cp
   finish
 endif
 
 let loaded_setcolors = 1
-let s:mycolors = ['slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler']  " colorscheme names that we use to set color
+" colorscheme names that we use to set color
+let s:mycolors = get(g:, 'mycolors', ['slate', 'torte', 'darkblue', 'delek', 'murphy', 'elflord', 'pablo', 'koehler'])
 
 " Set list of color scheme names that we will use, except
 " argument 'now' actually changes the current color scheme.
