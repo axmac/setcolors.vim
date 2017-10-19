@@ -37,3 +37,7 @@ Cycle through color schemes, press key:
 - F8: next scheme
 - Shift-F8: previous scheme
 - Alt-F8: random scheme
+
+# Acknowledgements
+
+- Original at http://vim.wikia.com/wiki/Switch_color_schemes#Script
